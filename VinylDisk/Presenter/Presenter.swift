@@ -10,5 +10,7 @@ import SnapKit
 
 class Presenter {
     init() {}
-    
+
+    var degree = CGFloat(Double.pi / 180)
+    var changedSpeed: Float = 0
 }

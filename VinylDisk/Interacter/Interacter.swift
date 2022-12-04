@@ -10,5 +10,8 @@ import SnapKit
 
 class Interacter {
     init() {}
-    
+
+    var start: ViewController?
+
+
 }
