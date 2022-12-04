@@ -21,6 +21,8 @@
 		00A14EFA293387D1004C7088 /* Protocol Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A14EF9293387D1004C7088 /* Protocol Presenter.swift */; };
 		00A14EFC29338846004C7088 /* View+setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A14EFB29338846004C7088 /* View+setup.swift */; };
 		00A14EFE2933887E004C7088 /* Protocol View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A14EFD2933887E004C7088 /* Protocol View.swift */; };
+		00AEB20A293CD0BB0041F1FA /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AEB209293CD0BB0041F1FA /* Singleton.swift */; };
+		00AEB20C293CD5280041F1FA /* View+enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AEB20B293CD5280041F1FA /* View+enum.swift */; };
 		636421D681672EF9B3A898FE /* Pods_VinylDisk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8126A35ED17074555A02D751 /* Pods_VinylDisk.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,8 @@
 		00A14EF9293387D1004C7088 /* Protocol Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Protocol Presenter.swift"; sourceTree = "<group>"; };
 		00A14EFB29338846004C7088 /* View+setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+setup.swift"; sourceTree = "<group>"; };
 		00A14EFD2933887E004C7088 /* Protocol View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Protocol View.swift"; sourceTree = "<group>"; };
+		00AEB209293CD0BB0041F1FA /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		00AEB20B293CD5280041F1FA /* View+enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+enum.swift"; sourceTree = "<group>"; };
 		809F82D924D5A266FF3C5F13 /* Pods-VinylDisk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VinylDisk.release.xcconfig"; path = "Target Support Files/Pods-VinylDisk/Pods-VinylDisk.release.xcconfig"; sourceTree = "<group>"; };
 		8126A35ED17074555A02D751 /* Pods_VinylDisk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VinylDisk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF7CDDD9FE8CEB31C04E6178 /* Pods-VinylDisk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VinylDisk.debug.xcconfig"; path = "Target Support Files/Pods-VinylDisk/Pods-VinylDisk.debug.xcconfig"; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 			children = (
 				00A14ED92932920C004C7088 /* AppDelegate.swift */,
 				00A14EDB2932920C004C7088 /* SceneDelegate.swift */,
+				00AEB208293CD0930041F1FA /* Singleton */,
 				00A14EF529338743004C7088 /* Coordinator */,
 				00A14EF629338757004C7088 /* View */,
 				00A14EF329338729004C7088 /* Presenter */,
@@ -126,8 +131,17 @@
 				00A14EDD2932920C004C7088 /* ViewController.swift */,
 				00A14EFB29338846004C7088 /* View+setup.swift */,
 				004B2FD72937822B0028D9E2 /* View+animation.swift */,
+				00AEB20B293CD5280041F1FA /* View+enum.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		00AEB208293CD0930041F1FA /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				00AEB209293CD0BB0041F1FA /* Singleton.swift */,
+			);
+			path = Singleton;
 			sourceTree = "<group>";
 		};
 		5441253EAFB855A51764D2A4 /* Pods */ = {
@@ -263,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00A14EDE2932920C004C7088 /* ViewController.swift in Sources */,
+				00AEB20A293CD0BB0041F1FA /* Singleton.swift in Sources */,
 				00A14EFC29338846004C7088 /* View+setup.swift in Sources */,
 				00A14EF829338797004C7088 /* Protocol Interactor.swift in Sources */,
 				00A14EFE2933887E004C7088 /* Protocol View.swift in Sources */,
@@ -272,6 +287,7 @@
 				00A14EFA293387D1004C7088 /* Protocol Presenter.swift in Sources */,
 				00A14EEE293384EC004C7088 /* Presenter.swift in Sources */,
 				00A14EDC2932920C004C7088 /* SceneDelegate.swift in Sources */,
+				00AEB20C293CD5280041F1FA /* View+enum.swift in Sources */,
 				004B2FD82937822B0028D9E2 /* View+animation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

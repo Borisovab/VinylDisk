@@ -18,5 +18,4 @@ class Coordinator {
     var presenter: Presenter?
     var view: ViewController?
 
-    var speedRotation = CGFloat(Double.pi / 180)
 }

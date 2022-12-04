@@ -8,5 +8,7 @@
 import Foundation
 
 protocol ViewProtocol {
-    
+    func setupStartButton()
+    func setupStopButton()
+    func setupSlider()
 }
