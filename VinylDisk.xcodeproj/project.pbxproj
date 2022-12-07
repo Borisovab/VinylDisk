@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		004B2FD82937822B0028D9E2 /* View+animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004B2FD72937822B0028D9E2 /* View+animation.swift */; };
+		00A14EDA2932920C004C7088 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A14ED92932920C004C7088 /* AppDelegate.swift */; };
+		00A14EDC2932920C004C7088 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A14EDB2932920C004C7088 /* SceneDelegate.swift */; };
+		00A14EDE2932920C004C7088 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A14EDD2932920C004C7088 /* ViewController.swift */; };
+		00A14EE12932920C004C7088 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A14EDF2932920C004C7088 /* Main.storyboard */; };
+		00A14EE32932920D004C7088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A14EE22932920D004C7088 /* Assets.xcassets */; };
+		00A14EE62932920D004C7088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A14EE42932920D004C7088 /* LaunchScreen.storyboard */; };
+		00A14EEE293384EC004C7088 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A14EED293384EC004C7088 /* Presenter.swift */; };
+		00A14EF0293384FB004C7088 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A14EEF293384FB004C7088 /* Interactor.swift */; };
+		00A14EF229338566004C7088 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A14EF129338566004C7088 /* Coordinator.swift */; };
+		00A14EF829338797004C7088 /* Protocol Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A14EF729338797004C7088 /* Protocol Interactor.swift */; };
+		00A14EFA293387D1004C7088 /* Protocol Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A14EF9293387D1004C7088 /* Protocol Presenter.swift */; };
+		00A14EFC29338846004C7088 /* View+setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A14EFB29338846004C7088 /* View+setup.swift */; };
+		00A14EFE2933887E004C7088 /* Protocol View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A14EFD2933887E004C7088 /* Protocol View.swift */; };
+		00AEB20A293CD0BB0041F1FA /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AEB209293CD0BB0041F1FA /* Singleton.swift */; };
+		00AEB20C293CD5280041F1FA /* View+enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AEB20B293CD5280041F1FA /* View+enum.swift */; };
+		636421D681672EF9B3A898FE /* Pods_VinylDisk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8126A35ED17074555A02D751 /* Pods_VinylDisk.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		004B2FD72937822B0028D9E2 /* View+animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+animation.swift"; sourceTree = "<group>"; };
+		00A14ED62932920C004C7088 /* VinylDisk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VinylDisk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00A14ED92932920C004C7088 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		00A14EDB2932920C004C7088 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		00A14EDD2932920C004C7088 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		00A14EE02932920C004C7088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00A14EE22932920D004C7088 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00A14EE52932920D004C7088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00A14EE72932920D004C7088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00A14EED293384EC004C7088 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		00A14EEF293384FB004C7088 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		00A14EF129338566004C7088 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		00A14EF729338797004C7088 /* Protocol Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Protocol Interactor.swift"; sourceTree = "<group>"; };
+		00A14EF9293387D1004C7088 /* Protocol Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Protocol Presenter.swift"; sourceTree = "<group>"; };
+		00A14EFB29338846004C7088 /* View+setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+setup.swift"; sourceTree = "<group>"; };
+		00A14EFD2933887E004C7088 /* Protocol View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Protocol View.swift"; sourceTree = "<group>"; };
+		00AEB209293CD0BB0041F1FA /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		00AEB20B293CD5280041F1FA /* View+enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+enum.swift"; sourceTree = "<group>"; };
+		809F82D924D5A266FF3C5F13 /* Pods-VinylDisk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VinylDisk.release.xcconfig"; path = "Target Support Files/Pods-VinylDisk/Pods-VinylDisk.release.xcconfig"; sourceTree = "<group>"; };
+		8126A35ED17074555A02D751 /* Pods_VinylDisk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VinylDisk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF7CDDD9FE8CEB31C04E6178 /* Pods-VinylDisk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VinylDisk.debug.xcconfig"; path = "Target Support Files/Pods-VinylDisk/Pods-VinylDisk.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00A14ED32932920C004C7088 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				636421D681672EF9B3A898FE /* Pods_VinylDisk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00A14ECD2932920C004C7088 = {
+			isa = PBXGroup;
+			children = (
+				00A14ED82932920C004C7088 /* VinylDisk */,
+				00A14ED72932920C004C7088 /* Products */,
+				5441253EAFB855A51764D2A4 /* Pods */,
+				D73BA51815BC508CA22E22CA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		00A14ED72932920C004C7088 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00A14ED62932920C004C7088 /* VinylDisk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00A14ED82932920C004C7088 /* VinylDisk */ = {
+			isa = PBXGroup;
+			children = (
+				00A14ED92932920C004C7088 /* AppDelegate.swift */,
+				00A14EDB2932920C004C7088 /* SceneDelegate.swift */,
+				00AEB208293CD0930041F1FA /* Singleton */,
+				00A14EF529338743004C7088 /* Coordinator */,
+				00A14EF629338757004C7088 /* View */,
+				00A14EF329338729004C7088 /* Presenter */,
+				00A14EF429338733004C7088 /* Interacter */,
+				00A14EDF2932920C004C7088 /* Main.storyboard */,
+				00A14EE22932920D004C7088 /* Assets.xcassets */,
+				00A14EE42932920D004C7088 /* LaunchScreen.storyboard */,
+				00A14EE72932920D004C7088 /* Info.plist */,
+			);
+			path = VinylDisk;
+			sourceTree = "<group>";
+		};
+		00A14EF329338729004C7088 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				00A14EF9293387D1004C7088 /* Protocol Presenter.swift */,
+				00A14EED293384EC004C7088 /* Presenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		00A14EF429338733004C7088 /* Interacter */ = {
+			isa = PBXGroup;
+			children = (
+				00A14EF729338797004C7088 /* Protocol Interactor.swift */,
+				00A14EEF293384FB004C7088 /* Interactor.swift */,
+			);
+			path = Interacter;
+			sourceTree = "<group>";
+		};
+		00A14EF529338743004C7088 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				00A14EF129338566004C7088 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		00A14EF629338757004C7088 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00A14EFD2933887E004C7088 /* Protocol View.swift */,
+				00A14EDD2932920C004C7088 /* ViewController.swift */,
+				00A14EFB29338846004C7088 /* View+setup.swift */,
+				004B2FD72937822B0028D9E2 /* View+animation.swift */,
+				00AEB20B293CD5280041F1FA /* View+enum.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00AEB208293CD0930041F1FA /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				00AEB209293CD0BB0041F1FA /* Singleton.swift */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		5441253EAFB855A51764D2A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF7CDDD9FE8CEB31C04E6178 /* Pods-VinylDisk.debug.xcconfig */,
+				809F82D924D5A266FF3C5F13 /* Pods-VinylDisk.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D73BA51815BC508CA22E22CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8126A35ED17074555A02D751 /* Pods_VinylDisk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00A14ED52932920C004C7088 /* VinylDisk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00A14EEA2932920D004C7088 /* Build configuration list for PBXNativeTarget "VinylDisk" */;
+			buildPhases = (
+				DFB24CDB3BDEA471E4E08AF9 /* [CP] Check Pods Manifest.lock */,
+				00A14ED22932920C004C7088 /* Sources */,
+				00A14ED32932920C004C7088 /* Frameworks */,
+				00A14ED42932920C004C7088 /* Resources */,
+				9A8F3565A9C90A9941F46CB8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VinylDisk;
+			productName = VinylDisk;
+			productReference = 00A14ED62932920C004C7088 /* VinylDisk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00A14ECE2932920C004C7088 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					00A14ED52932920C004C7088 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+				};
+			};
+			buildConfigurationList = 00A14ED12932920C004C7088 /* Build configuration list for PBXProject "VinylDisk" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00A14ECD2932920C004C7088;
+			productRefGroup = 00A14ED72932920C004C7088 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00A14ED52932920C004C7088 /* VinylDisk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00A14ED42932920C004C7088 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A14EE62932920D004C7088 /* LaunchScreen.storyboard in Resources */,
+				00A14EE32932920D004C7088 /* Assets.xcassets in Resources */,
+				00A14EE12932920C004C7088 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A8F3565A9C90A9941F46CB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VinylDisk/Pods-VinylDisk-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VinylDisk/Pods-VinylDisk-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VinylDisk/Pods-VinylDisk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFB24CDB3BDEA471E4E08AF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VinylDisk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00A14ED22932920C004C7088 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A14EDE2932920C004C7088 /* ViewController.swift in Sources */,
+				00AEB20A293CD0BB0041F1FA /* Singleton.swift in Sources */,
+				00A14EFC29338846004C7088 /* View+setup.swift in Sources */,
+				00A14EF829338797004C7088 /* Protocol Interactor.swift in Sources */,
+				00A14EFE2933887E004C7088 /* Protocol View.swift in Sources */,
+				00A14EDA2932920C004C7088 /* AppDelegate.swift in Sources */,
+				00A14EF229338566004C7088 /* Coordinator.swift in Sources */,
+				00A14EF0293384FB004C7088 /* Interactor.swift in Sources */,
+				00A14EFA293387D1004C7088 /* Protocol Presenter.swift in Sources */,
+				00A14EEE293384EC004C7088 /* Presenter.swift in Sources */,
+				00A14EDC2932920C004C7088 /* SceneDelegate.swift in Sources */,
+				00AEB20C293CD5280041F1FA /* View+enum.swift in Sources */,
+				004B2FD82937822B0028D9E2 /* View+animation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		00A14EDF2932920C004C7088 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00A14EE02932920C004C7088 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		00A14EE42932920D004C7088 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00A14EE52932920D004C7088 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00A14EE82932920D004C7088 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00A14EE92932920D004C7088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00A14EEB2932920D004C7088 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF7CDDD9FE8CEB31C04E6178 /* Pods-VinylDisk.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZJHZJYQRGW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VinylDisk/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FirstProject.playground.VinylDisk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00A14EEC2932920D004C7088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 809F82D924D5A266FF3C5F13 /* Pods-VinylDisk.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZJHZJYQRGW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VinylDisk/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FirstProject.playground.VinylDisk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00A14ED12932920C004C7088 /* Build configuration list for PBXProject "VinylDisk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00A14EE82932920D004C7088 /* Debug */,
+				00A14EE92932920D004C7088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00A14EEA2932920D004C7088 /* Build configuration list for PBXNativeTarget "VinylDisk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00A14EEB2932920D004C7088 /* Debug */,
+				00A14EEC2932920D004C7088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00A14ECE2932920C004C7088 /* Project object */;
+}
