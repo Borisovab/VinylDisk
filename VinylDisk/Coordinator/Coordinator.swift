@@ -12,11 +12,22 @@ class Coordinator {
 
     static let shared = Coordinator()
 
+    
     private init() {}
 
-    var interacter: Interacter?
-    var presenter: Presenter?
-    var view: ViewController?
+    func setController() -> UIViewController {
+        var view: ViewController
+        var interactor: Interactor
+        var presenter: Presenter
 
-    var speedRotation = CGFloat(Double.pi / 180)
+        view = ViewController()
+        interactor = Interactor()
+        presenter = Presenter()
+
+        view.interactor = interactor
+        interactor.presenter = presenter
+        presenter.outputView = view
+
+        return view
+    }
 }

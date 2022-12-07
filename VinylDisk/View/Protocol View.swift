@@ -8,5 +8,12 @@
 import Foundation
 
 protocol ViewProtocol {
-    
+    func update(model: ViewModel)
+}
+
+struct ViewModel {
+    var initialSpeed: Float?
+    var shangedSpeed: Float?
+    var startButtonIsHidden: Bool?
+    var stopButtonIsHidden: Bool?
 }

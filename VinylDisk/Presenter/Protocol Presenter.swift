@@ -8,5 +8,8 @@
 import Foundation
 
 protocol PresenterProtocol {
-    
+    func presentInitialSpeed(speed: Float)
+    func presentStartButton(isHidden: Bool)
+    func presentStopButton(isHidden: Bool)
+    func presentUpdateSpeed(speed: Float)
 }
