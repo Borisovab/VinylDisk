@@ -8,5 +8,5 @@
 import Foundation
 
 protocol ViewProtocol {
-    
+    func displayView(_ viewModel: HomeModels.ViewModel)
 }

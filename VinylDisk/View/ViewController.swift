@@ -7,60 +7,78 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ViewProtocol {
+
+    var interactor: InteractorProtocol?
 
     var timer: Timer!
-    var degree = CGFloat(Double.pi / 180)
-    var changedSpeed = 0
-    var flag = false
+    var currentSpeed = Float()
 
     var speedSwitch: UISlider = {
         let slider = UISlider()
-        slider.minimumValue = 0
-        slider.maximumValue = 20
-        slider.value = 5
+        slider.maximumValue = ScaleForSlider.maxValue.rawValue
+        slider.minimumValue = ScaleForSlider.minValue.rawValue
+        slider.value = ScaleForSlider.startValue.rawValue
         return slider
     }()
 
     var rotatedView: UIView = {
         let view = UIView()
-        view.clipsToBounds = true
-        view.layer.cornerRadius = view.bounds.width / 2
-        view.layer.borderWidth = 2
-        view.layer.borderColor = UIColor.systemPink.withAlphaComponent(0.1).cgColor
+        view.backgroundColor = .systemTeal
         return view
     }()
 
     var startButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Start", for: .normal)
+        button.setTitle(Singleton.shared.startNameButton, for: .normal)
         button.setTitleColor(UIColor.green, for: .normal)
+        button.backgroundColor = .blue
         return button
     }()
 
     var stopButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Stop", for: .normal)
+        button.setTitle(Singleton.shared.stopNameButton, for: .normal)
         button.setTitleColor(UIColor.red, for: .normal)
+        button.backgroundColor = .blue
         return button
     }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupView()
+        setupConstraints()
         hiddenButtons()
-        setupSlider()
-        setupStartButton()
-        setupStopButton()
+        interactor?.onLoadView()
 
+       
+    }
 
-
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        setupFormView()
     }
 
 
+    func displayView(_ viewModel: HomeModels.ViewModel) {
+        if let isHidden = model. {
 
+            startButton.isHidden = isHidden
+            setupStartButton()
+        }
 
-    
+        if let isHidden = model.stopButtonIsHidden {
 
+            stopButton.isHidden = isHidden
+            setupStopButton()
+        }
+
+        if let newSpeed = model.shangedSpeed {
+            setupSlider()
+            if newSpeed != currentSpeed {
+                currentSpeed = newSpeed
+            }
+        }
+
+    }
 }
 
